@@ -1,20 +1,13 @@
-#import numpy and matlibplots module
+import numpy as np
+import matplotlib.pylab as plt
+x = np.linspace(0, np.pi*6, 101)
+sin_wave = plt.plot(x, np.sin(x), 'r-', label='Sin')
+cos_wave = plt.plot(x, np.cos(x),'b--', label='Cos')
+plt.xlabel('Length')
+plt.ylabel('Height')
+plt.axis('tight')
+plt.legend([sin_wave, cos_wave], ['Sin', 'Cos'])
+plt.show()
 
-
-#generate array of x values from 0 to 6pi
-
-#calculate y values for sin wave
-
-#calculate y values for cosine wave
-
-#plot x and y values for both functions 
-
-#set dashed line for sine wave and solide line for cosine wave
-
-#add legend
-
-
-#leave comment here with your information
-#Name:
-#Date:
-
+#Date 1/20/16
+#Name Lateef Adetona
